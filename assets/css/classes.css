@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #365061;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.info, .gender-info {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  box-shadow: 0 10px 10px black;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black,
+    7px 6px 5px rgba(0,0,0,0.7);
+}
+
+.image img {
+  width: auto;
+  height: 100%;
+  object-fit: fill;
+}
+
+.name {
+  position: absolute;
+  bottom: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.system-text {
+  color: red;
+}
+
+.class-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.female, .male {
+  padding: 10px;
+  margin: 20px;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.female {
+  background-color: pink;
+}
+
+.female:hover {
+  transform: scale(1.1);
+}
+
+.male {
+  background-color: blue;
+}
+
+.male:hover {
+  transform: scale(1.1);
+}
+
+.continue {
+  color: #07202e;
+  border: none;
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.continue:hover {
+  transform: scale(1.1);
+  background-color: lightgreen;
+}
+
+.active {
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid white;
+}
+
+.male, .female {
+  display: none;
+}
+
+.femaleWarriorClass {
+  height: 150px;
+  width: 150px;
+}

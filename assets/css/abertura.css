@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+  scroll-behavior: smooth
+}
+
+body {
+  background-color: #07202e
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  box-shadow: 0 10px 10px black
+}
+
+.image img {
+  width: auto;
+  height: 100%;
+  object-fit: fill;
+}
+
+.name {
+  position: absolute;
+  bottom: 50px
+}
+
+.name h2 {
+  color: red;
+  font-size: 60px;
+  text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black,
+    7px 6px 5px rgba(0,0,0,0.7);
+}
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.system-text {
+  color: red;
+}
+
+.gender-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.female {
+  padding: 10px;
+  margin: 20px;
+  background-color: pink;
+  transition: transform 0.3s
+}
+
+.female:hover {
+  transform: scale(1.1);
+}
+
+.female img {}
+
+.male {
+  padding: 10px;
+  margin: 20px;
+  background-color: blue;
+  transition: transform 0.3s
+}
+
+.male:hover {
+  transform: scale(1.1);
+}
+
+.male img {}
+
+.continue {
+  color: red;
+  border: none;
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.continue:hover {
+  transform: scale(1.1);
+  background-color: lightgreen;
+}
+
+.active {
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid white;
+}

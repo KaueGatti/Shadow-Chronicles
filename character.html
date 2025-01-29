@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="assets/css/character.css">
+  <title>Personagem</title>
+</head>
+<body>
+  <h1>Dados finais</h1>
+  <form id="characterForm">
+    <label for="name">Nome do personagem:</label>
+    <br>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="gender">Genero do Personagem</label>
+    <br>
+    <input type="text" id="gender" name="gender" readonly>
+    <br>
+    <label for="class">Classe do Personagem</label>
+    <br>
+    <input type="text" id="class" name="class" readonly>
+    <br>
+    <label for="email">Seu e-mail</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="nasc">Sua data de nascimento</label>
+    <br>
+    <input type="date" id="nasc" name="nasc" required>
+    <br>
+    <button type="submit" class="continue">Enviar e Continuar</button>
+  </form>
+  <script src="assets/js/character.js"></script>
+</body>
+</html>

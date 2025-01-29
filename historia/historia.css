@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/rpg');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1{
+  color: red;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  color: red;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border: 5px solid #444;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.system-text {
+  color: red;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+button.continue {
+  background-color: #444;
+  color: red;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button.continue:hover {
+  background-color: #ff4444;
+  transform: scale(1.1);
+}
+
+button.continue:active {
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .container img {
+    max-height: 350px;
+  }
+}

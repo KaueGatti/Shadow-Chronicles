@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 200;
+  font-weight: 800;
   scroll-behavior: smooth;
 }
 
@@ -151,7 +151,7 @@ body {
 @media (max-width: 480px) {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
 }

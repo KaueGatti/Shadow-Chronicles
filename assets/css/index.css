@@ -70,7 +70,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid pink;
 }
 
 /* Texto "Escolha seu genero" */
@@ -85,7 +84,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  border: 1px solid pink;
 }
 
 /* opção genero feminino */
@@ -136,4 +134,22 @@ body {
 .active {
   background-color: rgba(0,0,0,0.3);
   border: 2px solid white;
+}
+
+/* Media queries para celular */
+
+@media (max-width: 480px) {
+  /* Reduzir o titulo para celulares menores*/
+  .tituloCapa h2 {
+    font-size: 3rem;
+  }
+  
+}
+
+@media (max-width: 384px) {
+   /* Reduzir o titulo para celulares menores*/
+  .tituloCapa h2 {
+    font-size: 2.5rem;
+  }
+  
 }

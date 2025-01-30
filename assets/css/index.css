@@ -142,7 +142,7 @@ body {
 
 /* Media queries para celular */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
     font-size: 50px;

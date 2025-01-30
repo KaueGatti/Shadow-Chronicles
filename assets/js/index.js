@@ -1,6 +1,6 @@
-const female = document.querySelector('.female');
-const male = document.querySelector('.male');
-const continueBtn = document.querySelector('.continue');
+const female = document.querySelector('.female-option');
+const male = document.querySelector('.male-option');
+const continueBtn = document.querySelector('.btt-continue');
 let gender = '';
 
 female.addEventListener('click', function() {
@@ -18,7 +18,7 @@ male.addEventListener('click', function() {
 continueBtn.addEventListener('click', function() {
     if(gender) {
         saveGender(gender);
-        window.location.href = "classes.html"
+        window.location.href = "classes.html";
     } else {
         alert('Escolha um gênero!');
     }

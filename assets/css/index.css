@@ -136,6 +136,11 @@ body {
   border: 2px solid white;
 }
 
+.active {
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid white;
+}
+
 /* Media queries para celular */
 
 @media (max-width: 480px) {

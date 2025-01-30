@@ -145,7 +145,7 @@ body {
 @media (max-width: 480px) {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
-    font-size: 2rem;
+    font-size: 50px;
   }
   
 }

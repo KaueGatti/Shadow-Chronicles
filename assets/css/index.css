@@ -157,6 +157,12 @@ body {
   .tituloCapa h2 {
     font-size: 2rem;
   }
+
+  .btt-continue {
+    height: 2rem;
+    width: 7rem;
+    font-size: 1.5rem;
+  }
   
 }
 

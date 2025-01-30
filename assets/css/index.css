@@ -146,7 +146,6 @@ body {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
     font-size: 3rem;
-    color: pink;
   }
   
 }
@@ -155,7 +154,6 @@ body {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
     font-size: 2rem;
-    color: pink;
   }
   
 }

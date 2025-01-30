@@ -142,7 +142,16 @@ body {
 
 /* Media queries para celular */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  /* Reduzir o titulo para celulares menores*/
+  .tituloCapa h2 {
+    font-size: 2.2rem;
+    color: pink;
+  }
+  
+}
+
+@media (max-width: 480px) {
   /* Reduzir o titulo para celulares menores*/
   .tituloCapa h2 {
     font-size: 2rem;

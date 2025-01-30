@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-br">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="assets/css/abertura.css">
-  <title>Shadow Chronicles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Shadow-Chronicles</title>
 </head>
 <body>
   <main>
-      <div class="container">
-          <div class="image">
+      <!-- Troquei tag div por section e mudei o nome da class para containerImagem-->
+      <section class="containerCapa">
+          <!-- class: image -> imageCapa -->
+          <div class="imageCapa">
               <img src="assets/images/capa.png" alt="capa do projeto" />
           </div>
-          <div class="name">
-              <h2 class="project-name">Shadow Chronicles</h2>
+          <!-- class: name -> tituloCapa -->
+          <div class="tituloCapa">
+              <h2>Shadow Chronicles</h2>
           </div>
-      </div>
-      <div class="text">
-          <p class="system-text">Escolha seu genero</p>
-        <div class="gender-options">
-          <div class="female">
-            <p class="female-text">Feminino</p>
-          </div>
-          <div class="male">
-            <p class="male-text">Masculino</p>
-          </div>          
-        </div>
-        <button class="continue" type="submit">Continuar</button>
-      </div>
+      </section>
+      <section class="containerPrincipal">
+        </article>
+        <!-- aqui eu pensei em colocar o texto, os generos e o botão continuar cada um em uma section -->
+        <!-- Aqui uma section para o texto de escolher genero-->
+        <article class="gender-text">
+          <p>Escolha o seu gênero</p> 
+        </article>
+        <!-- Aqui uma section para as opções de genero -->
+        <article class="gender-options">
+            <button class="female-option">Feminino</button>
+            <button class="male-option">Masculino</button>
+        </article>
+        <!-- Aqui uma section para o botao continue -->          
+        <article class="container-btn-continue">
+          <button class="btt-continue" type="submit">Continuar</button>
+        </article>
+      </section>
   </main>
   <script src="assets/js/abertura.js"></script>
 </body>

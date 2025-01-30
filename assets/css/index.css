@@ -3,45 +3,49 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 200;
-  scroll-behavior: smooth
 }
 
 body {
-  background-color: #07202e
+  background-color: #07202e;
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
+/* section da imagem e texto da capa */
+.containerCapa {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.image {
+/* Imagem da Capa */
+.imageCapa {
   width: 100%;
-  height: 1000px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-color: #f0f0f0;
-  box-shadow: 0 10px 10px black
+  box-shadow: 0 10px 10px black;
 }
 
-.image img {
+.imageCapa img {
   width: auto;
   height: 100%;
   object-fit: fill;
 }
 
-.name {
+/* Titulo da Capa */
+.tituloCapa {
   position: absolute;
-  bottom: 50px
+  bottom: 50px;
 }
 
-.name h2 {
+.tituloCapa h2 {
   color: red;
   font-size: 60px;
   text-shadow: 
@@ -52,55 +56,70 @@ body {
     7px 6px 5px rgba(0,0,0,0.7);
 }
 
-
-.text {
+/* section com o text, opções de genero e botão continue */
+.containerPrincipal{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  width: 100%;
+  height: 15rem;
+  justify-content: space-evenly;
 }
 
-.system-text {
+/* article Texto "Escolha seu genero" */
+.gender-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+}
+
+/* Texto "Escolha seu genero" */
+.gender-text p {
   color: red;
 }
 
+/* article das opções de gênero */
 .gender-options {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 0;
+  border: 1px solid pink;
 }
 
-.female {
+/* opção genero feminino */
+.female-option {
   padding: 10px;
   margin: 20px;
   background-color: pink;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
-.female:hover {
+.female-option:hover {
   transform: scale(1.1);
 }
 
-.female img {}
-
-.male {
+/* opção genero masculino */
+.male-option {
   padding: 10px;
   margin: 20px;
   background-color: blue;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
-.male:hover {
+.male-option:hover {
   transform: scale(1.1);
 }
 
-.male img {}
+/* article botão continue */
+.container-btn-continue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.continue {
+.btt-continue {
   color: red;
   border: none;
   background-color: aquamarine;
@@ -109,7 +128,7 @@ body {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.continue:hover {
+.btt-continue:hover {
   transform: scale(1.1);
   background-color: lightgreen;
 }

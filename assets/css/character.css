@@ -10,38 +10,57 @@ body {
   background-color: #07202e;
   color: #f0f0f0;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-h1 {
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tituloDadosFinais {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
   color: red;
-  text-shadow: 
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    7px 6px 5px rgba(0,0,0,0.7);
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5rem;
 }
 
-form {
-  margin: 20px;
-  text-align: center;
+.formDados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formDados input,
+.formDados label {
+  margin-top: 1rem;
 }
 
 label {
   color: red;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 input {
-  width: 50%;
+  width: 30%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 1.6rem;
   border-radius: 20px;
   text-align: center;
-  margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #ff4500;
-  color: #f0f0f0;
+  color: white;
 }
 
 input:focus {
@@ -50,7 +69,8 @@ input:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.continue {
+.bttEnviar {
+  margin-top: 3rem;
   color: #07202e;
   border: none;
   background-color: aquamarine;
@@ -61,11 +81,24 @@ input:focus {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.continue:hover {
+.bttEnviar:hover {
   transform: scale(1.1);
   background-color: lightgreen;
 }
 
-.continue:active {
+.bttEnviar:active {
   background-color: #ff4500;
+}
+
+@media (max-width: 480px) {
+
+  .tituloDadosFinais {
+    font-size: 3rem;
+  }
+
+  input {
+    height: 3rem;
+    width: 80%;
+  }
+  
 }

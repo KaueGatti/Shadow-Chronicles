@@ -1,3 +1,4 @@
+/* Configurações gerais*/
 * {
   margin: 0;
   padding: 0;
@@ -7,124 +8,149 @@
 }
 
 body {
-  background-color: #365061;
-  color: #f0f0f0;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 96vh;
-  margin: 0;
-  padding: 20px;
-}
-
-.info, .gender-info {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.image {
-  width: 100%;
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: #f0f0f0;
-  box-shadow: 0 10px 10px black;
-}
-
-h1 {
-  text-align: center;
-  color: red;
-  text-shadow: 
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    7px 6px 5px rgba(0,0,0,0.7);
-}
-
-.image img {
-  width: auto;
-  height: 100%;
-  object-fit: fill;
-}
-
-.name {
-  position: absolute;
-  bottom: 50px;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  margin: 0;
+  width: 100vw;
+  background-color: #365061;
+  text-align: center;
+  color: #f0f0f0;
 }
 
-.system-text {
-  color: red;
-}
-
-.class-options {
+main {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container onde vai os textos de cima */
+.containerTexts {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+}
+
+/* Titulo " Escollha sua classe" */
+.tituloEscolhaSuaClasse {
+  width: 100%;
+  color: red;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  font-size: 4rem;
+}
+
+/* texto Genero Seecionado */
+.genderSelected {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+}
+
+/* texto "Selecione uma classe para iniciar sua aventura" */
+.textSelecioneClasse {
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Container para as classes */
+.containerClass {
+  height: 65%;
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Configurando tamanho da imagem */
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 1.5rem;
+}
+
+/* Configurando container das classes mago e guerreiro */
+.containerWarrior,
+.containerMage {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 40%;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: blue;
+  border-radius: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* Configurando texto das classes */
+.containerClass p {
+  font-size: 1.5rem;
+}
+
+/* Section do botão continue */
+.sectionBttContinue {
+  display: flex;
+  height: 15%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  padding: 1rem;
 }
 
-.female, .male {
-  padding: 10px;
-  margin: 20px;
-  transition: transform 0.3s;
-  border-radius: 8px;
-}
-
-.female {
-  background-color: pink;
-}
-
-.female:hover {
-  transform: scale(1.1);
-}
-
-.male {
-  background-color: blue;
-}
-
-.male:hover {
-  transform: scale(1.1);
-}
-
-.continue {
-  color: #07202e;
-  border: none;
-  background-color: aquamarine;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
+/* Botão continue */
+.bttContinue {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  height: 5rem;
+  width: 15rem;
+  border-radius: 2rem;
+  background-color: rgb(2, 189, 18);
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.continue:hover {
+/* Animação do botão continue*/
+.bttContinue:hover {
   transform: scale(1.1);
-  background-color: lightgreen;
+  background-color: rgb(0, 255, 0);
 }
 
-.active {
-  background-color: rgba(0,0,0,0.3);
-  border: 2px solid white;
-}
+/* Media queries */
 
-.male, .female {
-  display: none;
+@media (max-width: 400px) {
+  .tituloEscolhaSuaClasse {
+    font-size: 2.5rem;
+  }
+
+  .containerClass {
+    display: flex;
+    border: 1px solid pink;
+    width: 100%;
+  }
+
+  .containerWarrior,
+  .containerMage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+    margin-top: none;
+  }
+
+  .sectionBttContinue {
+    margin-bottom: 4rem;
+  }
 }

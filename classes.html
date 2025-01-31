@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/classes.css">
   <title>Classes</title>
 </head>
 <body>
   <main>
-    <h1>Escolha sua Classe</h1>
-    <div class="container">
-      <p class="gender-info">O genero selecionado foi <strong>genero</strong></p>
-      <h2 class="system-text info">Selecione uma classe para iniciar sua aventura.</h2>
-      
-    <div class="class-options">
-      <div class="warrior">
-        <h2 class="system-text">Guerreiro(a)</h2>
-        <div class="male warriorClass">
-          <img  src="assets/images/maleW.png">
-        <p >Descricao da classe Guerreiro.</p>
-        </div>
-        <div class="female warriorClass">
-          <img  src="assets/images/femaleW.png">
-        <p >Descricao da classe Guerreira.</p>
-        </div>
-      </div>
-      <div class="mage">
-        <h2 class="system-text">Mago(a)</h2>
-        <div class="male mageClass">
-          <img  src="assets/images/maleM.png">
-        <p >Descricao da classe Mago.</p>
-        </div>
-        <div class="female mageClass">
-          <img  src="assets/images/femaleW.png">
-          <p >Descrição da classe Maga.</p>
-        </div>
-      </div>
-    </div>
-      <button class="continue" type="submit">Continuar</button>
-    </div>
+    <!-- Section para os textos de cima -->
+    <section class="containerTexts">
+      <h1 class="tituloEscolhaSuaClasse">Escolha sua Classe</h1>
+      <p class="genderSelected">O gênero selecionado foi <strong>genero</strong></p>
+      <p class="textSelecioneClasse">Selecione uma classe para iniciar sua aventura.</p>
+    </section>
+    <!-- Section para as opções de classe-->
+    <section class="containerClass">
+      <!-- Article para classe guerreiro-->
+      <article class="containerWarrior">
+        <!-- Titulo da classe -->
+        <p class="titleWarrior">Guerreiro(a)</p>
+        <!-- Imagem da classe -->
+        <img src="assets/images/maleW.png">
+        <!-- Descrição da classe -->
+        <p class="infoClass">Descricao da classe</p>
+      </article>
+      <!-- Article para classe mago-->
+      <article class="containerMage">
+        <!-- Titulo da classe -->
+        <p class="titleMage">Mago(a)</p>
+        <!-- Imagem da classe -->
+        <img src="assets/images/maleM.png">
+        <!-- Descrição da classe -->
+        <p class="infoClass">Descricao da classe</p>
+      </article>
+    </section>
+    <!-- Section para o botão continue -->
+    <section class="sectionBttContinue">
+      <!-- Botão continue -->
+      <button class="bttContinue" type="submit">Continuar</button>
+    </section>
   </main>
   <script src="assets/js/classes.js"></script>
 </body>

@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/inicio.css">
   <title>O início</title>
 </head>
-<body>
-  <main>
-    <div class="container">
-      <h1>Bem-vindo, <span class="name"></span>!</h1>
-      <p>Voce esta prestes a iniciar sua jornada como <strong class="class"></strong>.</p>
-      <div class="playerInfo">
-        <h1>Confirme os dados a seguir</h1>
-        <h2 class="name"></h2>
-        <h2 class="gender"></h2>
-        <h2 class="class"></h2>
-        <h2 class="email"></h2>
-        <h2 class="nasc"></h2>
-      </div>
-      <p>Ao pressionar <strong>comecar</strong>, voce confirma os dados acima e concorda com os <i>termos de uso</i></p>
-      <button type="submit" class="continue">Comecar</button>
-    </div>
-  </main>
-  <script src="assets/js/inicio.js"></script>
-</body>
+  <body>
+    <main>
+      <section class="containerBoasVindas">
+        <h1>Bem-vindo, $Nome</h1>
+        <p>Voce está prestes a iniciar sua jornada como $Classe</p>
+      </section>
+      <section class="sectionDados">
+        <article class="containerDados">
+          <h1>Confirme os dados a seguir</h1>
+          <p class="dados" id="name">$name</p>
+          <p class="dados" id="genero">$genero</p>
+          <p class="dados" id="classe">$classe</p>
+          <p class="dados" id="email">$email</p>
+          <p class="dados" id="dataNascimento">$dataNascimento</p>
+        </article>
+      </section>
+      <section class="containerTermosdeUso">
+        <p>Ao pressionar <strong>começar</strong>, você confirma os dados acima e concorda com os <i>termos de uso</i></p>
+      </section>
+      <section class="containerBttContinue">
+        <button class="bttContinue" type="submit">Começar</button>
+      </section>
+    </main>
+    <script src="assets/js/inicio.js"></script>
+  </body>
 </html>

@@ -9,112 +9,134 @@
 body {
   background-color: #07202e;
   color: #f0f0f0; /* Cor de texto clara para contrastar com o fundo escuro */
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerBoasVindas {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 20px;
+  height: 20%;
+  width: 100%;
 }
 
-h1, h2 {
+.containerBoasVindas h1 {
   color: red; /* Cor vermelha para títulos */
-  text-shadow: 
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    7px 6px 5px rgba(0,0,0,0.7); /* Efeito de sombra */
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7); /* Efeito de sombra */
+  font-size: 4rem;
+  padding: 1rem;
 }
 
-strong, span {
-  color: #ffa500; /* Laranja para destaque */
+.containerBoasVindas p {
+  font-size: 1.5rem;
+}
+
+.sectionDados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerDados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.containerDados h1 {
+  color: red; /* Cor vermelha para títulos */
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7); /* Efeito de sombra */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.containerDados p {
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.containerTermosdeUso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.containerTermosdeUso p strong {
+  color: orange;
 }
 
 i {
   color: #00bfff; /* Azul para texto itálico */
 }
 
-.playerInfo {
-  text-align: center;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
-  padding: 15px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
+.containerBttContinue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button.continue {
-  color: #07202e;
+.bttContinue {
+  height: 3rem;
+  width: 10rem;
   border: none;
   background-color: aquamarine;
   border-radius: 20px;
-  padding: 10px 20px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
-  margin-top: 20px;
+  color: #07202e;
+  margin-top: 1rem;
 }
 
-button.continue:hover {
+.bttContinue:hover {
   transform: scale(1.1);
   background-color: lightgreen;
 }
 
-button.continue:active {
+.bttContinue:active {
   background-color: #ff4500; /* Cor de fundo quando pressionado */
 }
 
-/* Ajuste para a parte de 'gender' e 'class' */
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
+@media (max-width: 480px) {
+  .containerBoasVindas h1 {
+    font-size: 2rem;
+  }
 
-.system-text {
-  color: red;
-}
+  .containerBoasVindas p {
+    text-align: center;
+  }
 
-.gender-options {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
+  .containerDados h1 {
+  font-size: 1.6rem;
+  }
 
-.female, .male {
-  padding: 10px;
-  margin: 20px;
-  transition: transform 0.3s;
-  border-radius: 8px;
-}
+  .containerTermosdeUso p {
+    text-align: center;
+    font-size: 1rem;
+  }
 
-.female {
-  background-color: pink;
-}
-
-.female:hover {
-  transform: scale(1.1);
-}
-
-.male {
-  background-color: blue;
-}
-
-.male:hover {
-  transform: scale(1.1);
-}
-
-.female img, .male img {
-  width: 50px;
-  height: auto;
+  .bttContinue {
+    margin-top: 2rem;
+  }
 }

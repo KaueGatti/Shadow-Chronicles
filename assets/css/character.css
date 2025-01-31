@@ -91,7 +91,6 @@ input:focus {
 }
 
 @media (max-width: 480px) {
-
   .tituloDadosFinais {
     font-size: 3rem;
   }
@@ -100,5 +99,4 @@ input:focus {
     height: 3rem;
     width: 80%;
   }
-  
 }

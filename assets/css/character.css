@@ -63,6 +63,11 @@ input {
   color: white;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 30px #1f3642 inset !important;
+  -webkit-text-fill-color: #f0f0f0 !important;
+}
+
 input:focus {
   outline: none;
   border-color: #ffa500;

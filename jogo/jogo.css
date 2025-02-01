@@ -369,7 +369,7 @@ main {
     background-color: #333;
     border: 1px solid black;
     border-radius: 3rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: white;
     transition: background-color 0.3s;
   }

@@ -36,6 +36,7 @@ main {
     2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7); /* Efeito de sombra */
   font-size: 4rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .containerBoasVindas p {
@@ -98,21 +99,22 @@ i {
 }
 
 .bttContinue {
-  height: 3rem;
-  width: 10rem;
-  border: none;
-  background-color: aquamarine;
+  height: 5rem;
+  width: 17rem;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+  background: rgb(179, 179, 179);
+  background: linear-gradient(180deg, rgb(26, 26, 26) 14%, rgba(30,30,30,0.5) 100%);
   border-radius: 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
+  padding: 10px 20px;
   transition: transform 0.3s, background-color 0.3s;
-  color: #07202e;
-  margin-top: 1rem;
+  opacity: 0.8;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .bttContinue:hover {
   transform: scale(1.1);
-  background-color: lightgreen;
 }
 
 .bttContinue:active {

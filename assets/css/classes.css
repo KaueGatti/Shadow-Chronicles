@@ -115,6 +115,8 @@ img {
 }
 
 .bttContinue {
+  height: 5rem;
+  width: 17rem;
   color: rgb(202, 201, 201);
   border: 1px solid rgb(167, 167, 167);
   background: rgb(179, 179, 179);
@@ -123,6 +125,7 @@ img {
   padding: 10px 20px;
   transition: transform 0.3s, background-color 0.3s;
   opacity: 0.8;
+  font-size: 2rem;
 }
 
 .bttContinue:hover {

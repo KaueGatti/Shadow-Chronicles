@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="jogo.css">
-  <title>Shadow Chronicles</title>
-</head>
-<body>
-  <main>
-    <!-- Visão Rápida -->
-    <div class="quick-view">
-      <div class="level-info">
-        <p class="level">1</p>
-      </div>
-      <div class="infos">
-        <div class="name"></div>
-        <div class="hp">
-          <div class="health-bar"></div>
-          <p class="health">100/100</p>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jogo.css" />
+    <title>Shadow Chronicles</title>
+  </head> 
+  <body>
+    <main>
+      <!-- Visão Rápida -->
+      <section class="sectionStatus">
+        <div class="level-info">
+          <p class="level">1</p>
         </div>
-        <div class="mp">
-          <div class="mana-bar"></div>
-          <p class="mana">100/100</p>
+        <div class="infos">
+          <div class="name"></div>
+          <div class="hp">
+            <div class="health-bar"></div>
+            <p class="health">100/100</p>
+          </div>
+          <div class="mp">
+            <div class="mana-bar"></div>
+            <p class="mana">100/100</p>
+          </div>
+          <div class="xp">
+            <div class="exp-bar"></div>
+            <p class="exp">0/100</p>
+          </div>
         </div>
-        <div class="xp">
-          <div class="exp-bar"></div>
-          <p class="exp">0/100</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="game-container">
-      <div class="scene">
-        <img id="scene" src="https://picsum.photos/200" alt="">
-      </div>
-      <div class="scene-desc">
-        <p id="scene-desc">descrição da cena</p>
-      </div>
-      <div class="scene-options">
-        <button id="option1">opção 1</button>
-        <button id="option2">opção 2</button>
-      </div>
-    </div>
+      </section>
 
-    <!-- Menu Inferior -->
-    <div class="bottom-menu">
-      <div class="menu-item" id="status">Status</div>
-      <div class="menu-item" id="hab">Habilidades</div>
-      <div class="menu-item" id="quests">Missões</div>
-      <div class="menu-item" id="shop">Loja</div>
-      <div class="menu-item" id="bag">Inventário</div>
-    </div>
+      <div class="game-container">
+        <div class="scene">
+          <img id="scene" src="https://picsum.photos/200" alt="" />
+        </div>
+        <div class="scene-desc">
+          <p id="scene-desc">descrição da cena</p>
+        </div>
+        <div class="scene-options">
+          <button id="option1">opção 1</button>
+          <button id="option2">opção 2</button>
+        </div>
+      </div>
 
-    <!-- Alertas -->
-    <div class="alerts">
-      <p class="quest-alert"></p>
-      <p class="health-alert"></p>
-    </div>
-  </main>
-  <script src="jogo.js"></script>
-  <script src="optionBtn.js"></script>
-  <script src="bars.js"></script>
-</body>
+      <!-- Menu Inferior -->
+      <div class="bottom-menu">
+        <div class="menu-item" id="status">Status</div>
+        <div class="menu-item" id="hab">Habilidades</div>
+        <div class="menu-item" id="quests">Missões</div>
+        <div class="menu-item" id="shop">Loja</div>
+        <div class="menu-item" id="bag">Inventário</div>
+      </div>
+
+      <!-- Alertas -->
+      <div class="alerts">
+        <p class="quest-alert"></p>
+        <p class="health-alert"></p>
+      </div>
+    </main>
+    <script src="jogo.js"></script>
+    <script src="optionBtn.js"></script>
+    <script src="bars.js"></script>
+  </body>
 </html>

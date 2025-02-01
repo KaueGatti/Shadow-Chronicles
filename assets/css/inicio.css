@@ -141,13 +141,3 @@ i {
     margin-top: 2rem;
   }
 }
-
-@media (max-width: 700px) {
-  .containerBoasVindas h1 {
-    color: red; /* Cor vermelha para títulos */
-    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
-      2px 2px 0 black, 7px 6px 5px rgba(0, 0, 0, 0.7); /* Efeito de sombra */
-    font-size: 3rem;
-    padding: 1rem;
-  }
-}

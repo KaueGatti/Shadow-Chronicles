@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nasc) {
         document.body.innerHTML = document.body.innerHTML.replace(/\$dataNascimento/g, nasc);
     }
-});
 
-const confirmBtn = document.querySelector('.bttContinue');
+    const confirmBtn = document.querySelector('.bttContinue');
 
 confirmBtn.addEventListener('click', function() {
     alert('Dados confirmados!');
     window.location.href = 'historia/parte1.html'
+});
 });

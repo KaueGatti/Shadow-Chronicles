@@ -95,7 +95,7 @@ input:focus {
   background-color: #ff4500;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 789px) {
   .tituloDadosFinais {
     font-size: 3rem;
   }

@@ -5,53 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="jogo.css" />
     <title>Shadow Chronicles</title>
-  </head> 
+  </head>
   <body>
     <main>
-      <!-- Visão Rápida -->
+      <!-- Section para a barra de status -->
       <section class="sectionStatus">
-        <div class="level-info">
-          <p class="level">1</p>
-        </div>
-        <div class="infos">
-          <div class="name"></div>
-          <div class="hp">
-            <div class="health-bar"></div>
-            <p class="health">100/100</p>
+        <!-- Article da barra de status -->
+        <article class="barStatus">
+          <!-- contanier para o level -->
+          <p class="containerStatusLevel">1</p>
+          <!-- container para nome, hp, mana, xp -->
+          <div class="containerStatusInfo">
+            <!-- container nome -->
+            <h1>$name</h1>
+            <!-- container barra e valor HP-->
+            <div class="containerHp">
+              <div class="barHp">HP</div>
+              <p class="statusHp">100/100</p>
+            </div>
+            <!-- container barra e valor Mana-->
+            <div class="containerMana">
+              <div class="barMana">Mana</div>
+              <p class="statusMana">100/100</p>
+            </div>
+            <!-- container barra e valor Xp-->
+            <div class="containerXp">
+              <div class="barXp">XP</div>
+              <p class="statusXp">0/100</p>
+            </div>
           </div>
-          <div class="mp">
-            <div class="mana-bar"></div>
-            <p class="mana">100/100</p>
-          </div>
-          <div class="xp">
-            <div class="exp-bar"></div>
-            <p class="exp">0/100</p>
-          </div>
-        </div>
+        </article>
       </section>
-
-      <div class="game-container">
-        <div class="scene">
-          <img id="scene" src="https://picsum.photos/200" alt="" />
-        </div>
-        <div class="scene-desc">
-          <p id="scene-desc">descrição da cena</p>
-        </div>
-        <div class="scene-options">
-          <button id="option1">opção 1</button>
-          <button id="option2">opção 2</button>
-        </div>
-      </div>
-
-      <!-- Menu Inferior -->
-      <div class="bottom-menu">
-        <div class="menu-item" id="status">Status</div>
-        <div class="menu-item" id="hab">Habilidades</div>
-        <div class="menu-item" id="quests">Missões</div>
-        <div class="menu-item" id="shop">Loja</div>
-        <div class="menu-item" id="bag">Inventário</div>
-      </div>
-
+      <!-- Section para o jogo principal -->
+      <section class="sectionJogo">
+        <!-- container cena, descrição e opções -->
+        <article class="containerJogoPrincipal">
+          <!-- container Cena -->
+          <img id="scene" src="https://picsum.photos/750/200" alt=""/>
+          <!-- Container Descrição -->
+          <p class="containerDesc">$descCena</p>
+          <!-- container para opções -->
+          <div class="containerOptions">
+            <button class="bttOption1">$Ação1</button>
+            <button class="bttOption2">$Ação2</button>
+          </div>
+        </article>
+      </section>
+      <!-- Section do menu inferior -->
+      <section class="sectionMenuInferior">
+        <!-- articles para os botões do menu-->
+        <article class="containersMenu" id="status">Status</article>
+        <article class="containersMenu" id="hab">Habilidades</article>
+        <article class="containersMenu" id="quests">Missões</article>
+        <article class="containersMenu" id="shop">Loja</article>
+        <article class="containersMenu" id="bag">Inventário</article>
+      </section>
       <!-- Alertas -->
       <div class="alerts">
         <p class="quest-alert"></p>

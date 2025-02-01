@@ -4,208 +4,381 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-  margin: 0;
-  padding: 10px;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
 }
 
-.quick-view {
-  background-color: gray;
-  height: 70px;
-  width: 60%;
-  border-radius: 50px;
+.sectionStatus {
   display: flex;
-  border: 2px solid black
+  height: 15%;
+  width: 100%;
+  padding: 0.5rem 1rem 0 1rem;
 }
 
-.level-info {
-  background-color: black;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  align-content: center;
+.barStatus {
+  display: flex;
+  width: 35%;
+  border-radius: 5rem;
+  background-color: rgb(111, 111, 111);
 }
 
-.level-info .level {
+.containerStatusLevel {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  height: 60px;
-  width: 60px;
   border-radius: 50%;
-  margin: 5px;
-}
-
-.level-info p {
-  text-align: center;
-  font-size: 55px;
-}
-
-.quick-view .name {
-  margin: 5px;
-  padding: 2px;
-  height: 20px;
-  width: 30%;
-  font-size: 22px;
-  font-weight: 600;
-  color: white;
-  text-shadow: 
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black
-}
-
-.hp, .mp, .xp {
-  display: flex;
-  flex-direction: row
-}
-
-.health, .mana, .exp {
-  font-size: 10px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.health {
-  margin-top: -2px
-}
-
-.mana, .exp {
-  margin-top: 2px
-}
-
-.health-bar, .mana-bar, .exp-bar {
-  border: 1px solid black
-}
-
-.health-bar {
-  background-color: crimson;
-  height: 5px;
-  width: 150px;
-  margin-left: 5px;
-  border-radius: 5px;
-}
-
-.mana-bar {
-  background-color: cornflowerblue;
-  height: 5px;
-  width: 150px;
-  margin-top: 5px;
-  margin-left: 5px;
-  border-radius: 5px
-}
-
-.exp-bar {
-  background-color: yellowgreen;
-  height: 5px;
-  width: 150px;
-  margin-top: 5px;
-  margin-left: 5px;
-  border-radius: 5px
-}
-
-.bottom-menu {
-  position: fixed;
-  bottom: 0;
-  left: 0; /* Garante que comece no canto esquerdo */
-  right: 0; /* Garante que vá até o canto direito */
-  width: 100%; /* Ocupa 100% da largura */
-  background-color: #222;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  border-top: 2px solid #444;
-  z-index: 1000;
-  box-sizing: border-box; /* Inclui padding dentro do tamanho total */
-}
-
-.menu-item {
-  flex: 1;
-  background-color: #333;
-  color: #fff;
+  font-size: 4rem;
   border: 1px solid black;
-  padding: 10px;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 20px;
-  margin: 0 5px
 }
 
-.menu-item:hover {
-  background-color: #555;
+.containerStatusInfo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding: 0.5rem 0 0.5rem 0;
 }
 
-.menu-item:active {
-  background-color: #777;
+.containerStatusInfo h1 {
+  display: flex;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  text-shadow: 2px 2px 0px #9e9e9e;
+  color: #000000;
+  font-size: 3rem;
+  padding-left: 1rem;
 }
 
-.game-container {
+.containerHp,
+.containerXp,
+.containerMana {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.barHp,
+.barMana,
+.barXp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 70%;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid black;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.barHp {
+  background-color: red;
+}
+
+.barMana {
+  background-color: blue;
+}
+
+.barXp {
+  background-color: greenyellow;
+}
+
+.statusHp,
+.statusMana,
+.statusXp {
+  color: #000000;
+}
+
+.sectionJogo {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerJogoPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  background-color: rgb(111, 111, 111);
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.containerJogoPrincipal img {
+  height: 200px;
+  width: 750px;
+  border: 5px solid rgb(153, 153, 153);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.containerDesc {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  word-break: break-all;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid black;
+  background-color: #a0a0a0;
+  font-size: 1.5rem;
+}
+
+.containerOptions {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
-  background-color: gainsboro;
-  margin-top: 25%;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 20px;
-  border: 4px solid black
+  align-items: center;
 }
 
-.game-container .scene {
-  height: 40%;
-  width: 60%;
-  margin: 10px 20%;
-  border-radius: 20px;
-  border: 4px solid black
+.bttOption1,
+.bttOption2 {
+  margin-top: 1rem;
+  height: 3.5rem;
+  width: 45rem;
+  border-radius: 1rem;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  font-size: 1.5rem;
 }
 
-.scene img {
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.game-container .scene-desc {
-  height: 20%;
-  width: 80%;
-  margin: 5px 10%;
-  border-radius: 20px;
-  border: 4px solid black;
-  text-align: center;
-}
-
-.scene-desc p {
-  margin: 5px 5px 0 5px;
-  font-size: 20px
-}
-
-.game-container .scene-options {
+.sectionMenuInferior {
   display: flex;
-  flex-direction: column;
-  height: 20%;
-  width: 80%;
-  margin: 5px 10%;
-  border-radius: 20px;
-  border: 4px solid black
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #222;
+  padding: 0.7rem;
+  border-top: 2px solid #444444;
 }
 
-.scene-options button {
-  margin: 5px 10%;
-  height: 50%;
-  width: 80%;
-  border: 2px solid black;
-  border-radius: 20px
+.containersMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 22rem;
+  background-color: #333;
+  border: 1px solid black;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.containersMenu:hover {
+  background-color: #555;
+}
+
+.containersMenu:active {
+  background-color: #777;
+}
+
+@media (max-width: 736px) {
+  .sectionStatus {
+    display: flex;
+    height: 13%;
+    width: 100%;
+  }
+  
+  .barStatus {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: rgb(111, 111, 111);
+  }
+  
+  .containerStatusLevel {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 4rem;
+    border: 1px solid black;
+  }
+  
+  .containerStatusInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  
+  .containerStatusInfo h1 {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    text-shadow: 2px 2px 0px #9e9e9e;
+    color: #000000;
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .containerHp,
+  .containerXp,
+  .containerMana {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  
+  .barHp,
+  .barMana,
+  .barXp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 70%;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid black;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+  
+  .barHp {
+    background-color: red;
+  }
+  
+  .barMana {
+    background-color: blue;
+  }
+  
+  .barXp {
+    background-color: greenyellow;
+  }
+  
+  .statusHp,
+  .statusMana,
+  .statusXp {
+    color: #000000;
+  }
+  
+  .sectionJogo {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerJogoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(111, 111, 111);
+    border-radius: 3rem;
+    width: 90%
+  }
+  
+  .containerJogoPrincipal img {
+    height: 200px;
+    width: 300px;
+    border: 5px solid rgb(153, 153, 153);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .containerDesc {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    word-break: break-all;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color: #a0a0a0;
+    font-size: 1rem;
+  }
+  
+  .containerOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bttOption1,
+  .bttOption2 {
+    margin-top: 1rem;
+    height: 3.5rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .sectionMenuInferior {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    padding: 0.7rem;
+    border-top: 2px solid #444444;
+  }
+  
+  .containersMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 5rem;
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .containersMenu:hover {
+    background-color: #555;
+  }
+  
+  .containersMenu:active {
+    background-color: #777;
+  }
 }

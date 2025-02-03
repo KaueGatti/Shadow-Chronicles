@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow Chronicles - Status</title>
+  <link rel="stylesheet" href="../../assets/css/status.css">
 </head>
 <body>
-  <h1>
-    Hello, World!
-  </h1>
+  <div class="top">
+    <h1>Status</h1>
+    <button class="back">voltar</button>
+  </div>
+
+  <div class="status-container">
+    <div class="profile">
+      <img id="charImage" src="assets/img/default.png" alt="Personagem">
+      <h2 class="name">Nome do Personagem</h2>
+      <p>Gênero: <span class="gender">???</span></p>
+      <p>Classe: <span class="class">???</span></p>
+      <p>Nível: <span class="level">1</span></p>
+    </div>
+
+    <div class="stats">
+      <h3>Status</h3>
+      <p>HP: <span class="hp">100</span></p>
+      <p class="mp">Mana: <span class="mana">50</span></p>
+      <p>XP: <span class="xp">0 / 100</span></p>
+    </div>
+
+    <div class="attributes">
+      <h3>Atributos</h3>
+      <p>Força: <span class="strength">10</span></p>
+      <p>Defesa: <span class="defense">10</span></p>
+      <p>Inteligência: <span class="intelligence">10</span></p>
+      <p>Velocidade: <span class="speed">10</span></p>
+      <p>Vitalidade: <span class="vitality">10</span></p>
+    </div>
+  </div>
+
+  <script src="status.js"></script>
 </body>
 </html>

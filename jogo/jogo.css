@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -185,17 +186,140 @@ main {
   border: 1px solid black;
   border-radius: 3rem;
   font-size: 1.5rem;
-  color: white;
+  color: rgb(255, 255, 255);
   transition: background-color 0.3s;
 }
 
 .containersMenu:hover {
-  background-color: #555;
+background-color: #555;
 }
 
 .containersMenu:active {
   background-color: #777;
 }
+
+/* CSS para os containers do menu*/
+
+.sectionContainersMenu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sectionContainersMenu article {
+  position: absolute;
+  background-color: #2d2d2d;
+  height: 85%;
+  width: 80%;
+  border-radius: 3rem;
+}
+
+/* Menu Status */
+
+.containerStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  
+}
+
+.tituloContainer {
+  padding: 0.5rem;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.containerPrincipalStatus {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.container-img h1 {
+  font-size: 2rem;
+} 
+
+.container-dados-status {
+  width: 30%;
+}
+
+.container-dados-status h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+.container-dados-status p {
+  padding: 0.2rem;
+}
+
+.bttVoltar {
+  height: 3rem;
+  width: 12rem;
+  border-radius: 1rem;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+.bttVoltar:hover {
+  background-color: #555;
+}
+
+.bttVoltar:active {
+  background-color: #777;
+}
+
+/* Menu Habilidade */
+
+.containerHabilidades {
+  display: none;
+}
+
+/* Menu Missões */
+
+.containerMissoes {
+  display: none;
+}
+
+/* Menu Loja */
+
+.containerLoja {
+  display: none;
+}
+
+/* Menu Inventario */
+
+.containerInventario {
+  display: none;
+}
+
+/* Media Queries*/
 
 @media (max-width: 736px) {
   .sectionStatus {
@@ -203,7 +327,7 @@ main {
     height: 13%;
     width: 100%;
   }
-  
+
   .barStatus {
     display: flex;
     height: 5rem;
@@ -211,7 +335,7 @@ main {
     border-radius: 3rem;
     background-color: rgb(111, 111, 111);
   }
-  
+
   .containerStatusLevel {
     height: 100%;
     width: 20%;
@@ -223,7 +347,7 @@ main {
     font-size: 4rem;
     border: 1px solid black;
   }
-  
+
   .containerStatusInfo {
     display: flex;
     flex-direction: column;
@@ -232,7 +356,7 @@ main {
     height: 100%;
     padding: 0.5rem 0 0.5rem 0;
   }
-  
+
   .containerStatusInfo h1 {
     display: flex;
     align-items: center;
@@ -244,7 +368,7 @@ main {
     padding-left: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .containerHp,
   .containerXp,
   .containerMana {
@@ -254,7 +378,7 @@ main {
     width: 100%;
     padding-left: 1rem;
   }
-  
+
   .barHp,
   .barMana,
   .barXp {
@@ -270,25 +394,25 @@ main {
     font-size: 0.7rem;
     font-weight: 900;
   }
-  
+
   .barHp {
     background-color: red;
   }
-  
+
   .barMana {
     background-color: blue;
   }
-  
+
   .barXp {
     background-color: greenyellow;
   }
-  
+
   .statusHp,
   .statusMana,
   .statusXp {
     color: #000000;
   }
-  
+
   .sectionJogo {
     height: 70%;
     width: 100%;
@@ -296,16 +420,16 @@ main {
     justify-content: center;
     align-items: center;
   }
-  
+
   .containerJogoPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(111, 111, 111);
     border-radius: 3rem;
-    width: 90%
+    width: 90%;
   }
-  
+
   .containerJogoPrincipal img {
     height: 200px;
     width: 300px;
@@ -313,7 +437,7 @@ main {
     border-radius: 2rem;
     overflow: hidden;
   }
-  
+
   .containerDesc {
     display: flex;
     flex-wrap: nowrap;
@@ -329,14 +453,14 @@ main {
     background-color: #a0a0a0;
     font-size: 1rem;
   }
-  
+
   .containerOptions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .bttOption1,
   .bttOption2 {
     margin-top: 1rem;
@@ -347,7 +471,7 @@ main {
     color: white;
     font-size: 1.5rem;
   }
-  
+
   .sectionMenuInferior {
     display: flex;
     justify-content: space-evenly;
@@ -359,7 +483,7 @@ main {
     padding: 0.7rem;
     border-top: 2px solid #444444;
   }
-  
+
   .containersMenu {
     display: flex;
     justify-content: center;
@@ -373,12 +497,35 @@ main {
     color: white;
     transition: background-color 0.3s;
   }
-  
+
   .containersMenu:hover {
     background-color: #555;
   }
-  
+
   .containersMenu:active {
     background-color: #777;
   }
+
+  /* Menu Status */
+
+.containerStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  
 }
+
+.tituloContainer {
+  padding: 0.5rem;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.container-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+} 

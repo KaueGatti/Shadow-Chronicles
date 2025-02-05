@@ -21,31 +21,3 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.innerHTML = document.body.innerHTML.replace(/\$name/g, name);
   }
 });
-
-// buttons
-
-const btnStatus = document.querySelector("#status");
-const btnHab = document.querySelector("#hab");
-const btnQuests = document.querySelector("#quests");
-const btnShop = document.querySelector("#shop");
-const btnBag = document.querySelector("#bag");
-
-btnStatus.addEventListener("click", function () {
-  window.location.href = "extras/status.html";
-});
-
-btnHab.addEventListener("click", function () {
-  window.location.href = "extras/habilidades.html";
-});
-
-btnQuests.addEventListener("click", function () {
-  window.location.href = "extras/quests.html";
-});
-
-btnShop.addEventListener("click", function () {
-  window.location.href = "extras/loja.html";
-});
-
-btnBag.addEventListener("click", function () {
-  window.location.href = "extras/inventario.html";
-});

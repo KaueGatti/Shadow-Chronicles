@@ -528,4 +528,9 @@ background-color: #555;
   width: 100px;
   border-radius: 50%;
 }
+
+.container-dados-status {
+  width: 100%;
+}
+
 } 

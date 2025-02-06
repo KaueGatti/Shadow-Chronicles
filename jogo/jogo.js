@@ -21,3 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.innerHTML = document.body.innerHTML.replace(/\$name/g, name);
   }
 });
+
+function abrirMenu(id) {
+  let sectionContainersMenu = document.getElementById("sectionContainersMenuId");
+  let menuSelecionado = document.getElementById(`container-${id}`);
+  let bttVoltar = menuSelecionado.lastElementChild;
+  if (sectionContainersMenu && menuSelecionado && bttVoltar) {
+    sectionContainersMenu.style.display = "flex";
+    menuSelecionado.style.display = "flex";
+  }
+  bttVoltar.addEventListener("click", () => {
+    sectionContainersMenu.style.display = "none";
+    menuSelecionado.style.display = "none";
+  })
+}

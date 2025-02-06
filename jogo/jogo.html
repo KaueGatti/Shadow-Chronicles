@@ -41,7 +41,7 @@
         <!-- container cena, descrição e opções -->
         <article class="containerJogoPrincipal">
           <!-- container Cena -->
-          <img id="scene" src="https://picsum.photos/750/200" alt=""/>
+          <img id="scene" src="https://picsum.photos/750/200" alt="" />
           <!-- Container Descrição -->
           <p class="containerDesc">$descCena</p>
           <!-- container para opções -->
@@ -54,21 +54,31 @@
       <!-- Section do menu inferior -->
       <section class="sectionMenuInferior">
         <!-- articles para os botões do menu-->
-        <article class="containersMenu" id="status">Status</article>
-        <article class="containersMenu" id="hab">Habilidades</article>
-        <article class="containersMenu" id="quests">Missões</article>
-        <article class="containersMenu" id="shop">Loja</article>
-        <article class="containersMenu" id="bag">Inventário</article>
+        <article class="containersMenu" id="status" onclick="abrirMenu(id)"
+          >Status</article
+        >
+        <article class="containersMenu" id="habilidades" onclick="abrirMenu(id)"
+          >Habilidades</article
+        >
+        <article class="containersMenu" id="missoes" onclick="abrirMenu(id)"
+          >Missões</article
+        >
+        <article class="containersMenu" id="loja" onclick="abrirMenu(id)"
+          >Loja</article
+        >
+        <article class="containersMenu" id="inventario" onclick="abrirMenu(id)"
+          >Inventário</article
+        >
       </section>
       <!-- Containers das telas do menu inferior -->
       <!-- Section para os container-->
-      <section class="sectionContainersMenu">
+      <section class="sectionContainersMenu" id="sectionContainersMenuId">
         <!-- Container Status -->
-        <article class="containerStatus">
+        <article class="containerStatus" id="container-status">
           <h1 class="tituloContainer">Status</h1>
           <div class="containerPrincipalStatus">
             <div class="container-img">
-              <img src="../assets/images/femaleM.png" alt="Personagem">
+              <img src="../assets/images/femaleM.png" alt="Personagem" />
               <h1 class="tituloName">$name</h1>
               <p class="pGenero">Gênero: $gender</p>
               <p class="pClasse">Classe: $class</p>
@@ -87,23 +97,23 @@
               <p>Inteligência: 10</p>
             </div>
           </div>
-          <button class="bttVoltar" id="bttVoltarStatus">Voltar</button>
+          <button class="bttVoltar">Voltar</button>
         </article>
         <!-- Container Habilidades -->
-        <article class="containerHabilidades">
-
+        <article class="containerHabilidades" id="container-habilidades">
+          <button class="bttVoltar">Voltar</button>
         </article>
         <!-- Container Missões -->
-        <article class="containerMissoes">
-
+        <article class="containerMissoes" id="container-missoes">
+          <button class="bttVoltar">Voltar</button>
         </article>
         <!-- Container Loja -->
-        <article class="containerLoja">
-
+        <article class="containerLoja" id="container-loja">
+          <button class="bttVoltar">Voltar</button>
         </article>
         <!-- Container Inventário -->
-        <article class="containerInventario">
-
+        <article class="containerInventario" id="container-inventario">
+          <button class="bttVoltar">Voltar</button>
         </article>
       </section>
     </main>

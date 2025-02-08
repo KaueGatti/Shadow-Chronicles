@@ -4,13 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const classe = localStorage.getItem("class");
 
   if (gender) {
-      let genderName = gender === "female" ? "Feminino" : "Masculino";
-      document.body.innerHTML = document.body.innerHTML.replace(/\$gender/g, genderName);
-    }
+    let genderName = gender === "female" ? "Feminino" : "Masculino";
+    document.body.innerHTML = document.body.innerHTML.replace(
+      /\$gender/g,
+      genderName
+    );
+  }
 
   if (classe) {
     let className = classe === "warrior" ? "Guerreiro" : "Mago";
-    document.body.innerHTML = document.body.innerHTML.replace(/\$class/g, className);
+    document.body.innerHTML = document.body.innerHTML.replace(
+      /\$class/g,
+      className
+    );
     if (classe === "warrior") {
       const containerMana = document.querySelector(".containerMana");
       containerMana.style.display = "none";
@@ -25,13 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function abrirMenu(id) {
   let sectionContainersMenu = document.getElementById("sectionContainersMenuId");
   let menuSelecionado = document.getElementById(`container-${id}`);
-  let bttVoltar = menuSelecionado.lastElementChild;
+  let bttVoltar = document.getElementById(`bttVoltar-${id}`);
   if (sectionContainersMenu && menuSelecionado && bttVoltar) {
     sectionContainersMenu.style.display = "flex";
     menuSelecionado.style.display = "flex";
+    bttVoltar.addEventListener("click", () => {
+      sectionContainersMenu.style.display = "none";
+      menuSelecionado.style.display = "none";
+    });
   }
-  bttVoltar.addEventListener("click", () => {
-    sectionContainersMenu.style.display = "none";
-    menuSelecionado.style.display = "none";
-  })
 }

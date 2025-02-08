@@ -1,0 +1,74 @@
+/* Menu Status */
+
+.containerStatus {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.containerStatus .tituloContainer {
+  padding: 0.5rem;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.containerPrincipalStatus {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.container-img h1 {
+  font-size: 2rem;
+}
+
+.container-dados-status {
+  width: 30%;
+}
+
+.container-dados-status h2 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+.container-dados-status p {
+  padding: 0.2rem;
+}
+
+.containerStatus button {
+  height: 3rem;
+  width: 12rem;
+  border-radius: 1rem;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+.containerStatus button:hover {
+  background-color: #555;
+}
+
+.containerStatus button:active {
+  background-color: #777;
+}

@@ -1,5 +1,113 @@
 /* Menu Inventario */
 
+.containerInventario * {
+  color: white;
+}
+
 .containerInventario {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.containerInfoInv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.containerItens {
+  justify-content: center;
+  display: grid;
+  height: 70%;
+  width: 52%;
+  background-color: rgba(99, 99, 99, 0.403);
+  border-radius: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(5, 9rem);
+}
+
+.slotItens {
+  width: 7rem;
+  height: 7rem;
+  background-color: #222;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.containerInventario button {
+  height: 3rem;
+  width: 18rem;
+  border-radius: 1rem;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+
+.containerInventario button:hover {
+  background-color: #555;
+}
+
+.containerInventario button:active {
+  background-color: #777;
+}
+
+.item-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.inventory-slot img {
+  border-radius: 5px;
+}
+
+.btnsMenuItem {
+  margin-top: 15px;
+}
+
+.btnsMenuItem {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnsMenuItem:hover {
+  background-color: #0056b3;
+}
+
+.btnsMenuItem:disabled {
+  background-color: #555;
+  cursor: not-allowed;
 }

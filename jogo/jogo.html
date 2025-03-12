@@ -193,12 +193,30 @@
         </article>
         <!-- Container Inventário -->
         <article class="containerInventario" id="container-inventario">
-          <button class="bttVoltar">Voltar</button>
+          <h1>Inventario</h1>
+          <div class="containerInfoInv">
+            <p>Espaço ocupado <span id="inventoryCount">0</span>/15</p>
+            <p>Coins: <span id="coins">0</span></p>
+          </div>
+          <div class="containerItens"> <!-- Container para os slots -->
+            <!-- slots do inventário -->
+          </div>
+          <button class="bttVoltar" id="bttAddSword">Adicionar Espada</button>
+          <button class="bttVoltar" id="bttAddShield">Adicionar Escudo</button>
+          <button class="bttVoltar" id="bttVoltar-inventario">Voltar</button>
+          <!-- Menu suspenso do item-->
+          <div id="itemMenu" class="item-menu hidden">
+            <p id="itemDescription"></p>
+            <button class="btnsMenuItem" id="sellItem">Vender</button>
+            <button class="btnsMenuItem" id="viewDetails">Detalhes</button>
+            <button class="btnsMenuItem" id="mergeItem">Fundir</button>
+        </div>
         </article>
       </section>
     </main>
     <script src="jogo.js"></script>
     <script src="optionBtn.js"></script>
     <script src="bars.js"></script>
+    <script src="../assets/js/inventario.js"></script>
   </body>
 </html>

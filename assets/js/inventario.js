@@ -60,10 +60,27 @@ function renderInventory() { // Função para renderizar o inventário
             itemImg.alt = inv[i].name;
             slot.appendChild(itemImg);
 
+            switch (inv[i].rarity) {
+                case "Incomum":
+                    slot.style.border = "3px solid green";
+                    break;
+                case "Raro":
+                    slot.style.border = "3px solid blue";
+                    break;
+                case "Épico":
+                    slot.style.border = "3px solid purple";
+                    break;
+                case "Lendário":
+                    slot.style.border = "3px solid yellow";
+                    break;
+            }
+
             slot.addEventListener("click", (event) => {
                 showItemMenu(event, i);
             });
         }
+
+        
 
         invTest.appendChild(slot); // Adicionar o slot ao container de slots
     }
@@ -114,7 +131,7 @@ mergeItemBtn.addEventListener("click", () => {
         const item = inv[selectedItemIndex];
         const itemCount = countItemInInventory(item.name, item.rarity);
 
-        if (itemCount >= 3) {
+        if (itemCount >= 0) {
             removeItems(item.name, item.rarity);
 
             const nextRarity = getNextRarity(item.rarity);

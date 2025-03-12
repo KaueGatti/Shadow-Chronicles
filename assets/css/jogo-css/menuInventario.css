@@ -85,7 +85,9 @@ h1 {
   display: none;
 }
 
-.inventory-slot img {
+.slotItens img {
+  height: auto;
+  width: 100%;
   border-radius: 5px;
 }
 

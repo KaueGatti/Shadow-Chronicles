@@ -22,14 +22,14 @@ const items = { // Objeos para armazenar os itens
         name: "Espada de Ferro", // nome do item
         type: "Espada",  // tipo do item
         rarity: "Comum",  // Raridade do item
-        image: "../images/espada.png", // Imagem do item
+        image: "../assets/images/espada.png", // Imagem do item
         value: 100 // Valor do item
     },
     shield: { // item escudo
         name: "Escudo de Madeira", // nome do item
         type: "Escudo", // tipo do item
         rarity: "Comum", // Raridade do item
-        image: "../images/escudo.png", // Imagem do item
+        image: "../assets/images/escudo.png", // Imagem do item
         value: 80 // Valor do item
     }
 };
